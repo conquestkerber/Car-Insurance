@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_0qixoDi_Eeiv1vJEsXUVXg" name="RootElement">
+  <packagedElement xmi:type="uml:Class" xmi:id="_2HP0oDjJEei5qPF3k0201w" name="Vozilo">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_vUqe0TjPEei5qPF3k0201w" name="osiguravajuca kuca" type="_3m7h4DjNEei5qPF3k0201w" association="_vUopoDjPEei5qPF3k0201w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0F4o8DkNEei5qPF3k0201w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0HBRYDkNEei5qPF3k0201w" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zTC_8TjPEei5qPF3k0201w" name="vlasnik" type="_3X49IDjJEei5qPF3k0201w" association="_zTBx0DjPEei5qPF3k0201w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TAOjYDjQEei5qPF3k0201w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TAgQMDjQEei5qPF3k0201w" value="1"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_RrNjIDjOEei5qPF3k0201w" name="+godiste:date"/>
+    <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_VWaCgDjOEei5qPF3k0201w" name="+tablica:string"/>
+    <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_XEhKIDjOEei5qPF3k0201w" name="+marka:string"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3X49IDjJEei5qPF3k0201w" name="Vlasnik">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wFbNYTjPEei5qPF3k0201w" name="osiguravajuca kuca" type="_3m7h4DjNEei5qPF3k0201w" association="_wFZYMDjPEei5qPF3k0201w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9sxDoDkNEei5qPF3k0201w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9tRZ8DkNEei5qPF3k0201w" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NorvkjjTEei5qPF3k0201w" name="zahtev" type="_5NDH8DjJEei5qPF3k0201w" association="_NoqhcDjTEei5qPF3k0201w"/>
+    <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_czamoDjOEei5qPF3k0201w" name="+ime:string"/>
+    <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_euJ1ADjOEei5qPF3k0201w" name="+prezime:string"/>
+    <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_g48RkDjOEei5qPF3k0201w" name="+id:int"/>
+    <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_imEhwDjOEei5qPF3k0201w" name="+marka:string"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5NDH8DjJEei5qPF3k0201w" name="Zahtev">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_015SwjjPEei5qPF3k0201w" name="salter" type="_tjzaoDjOEei5qPF3k0201w" association="_014rsDjPEei5qPF3k0201w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cu6tEDkOEei5qPF3k0201w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cvFFIDkOEei5qPF3k0201w" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6CesYjjPEei5qPF3k0201w" name="osiguravajuca kuca" type="_3m7h4DjNEei5qPF3k0201w" association="_6CeFUDjPEei5qPF3k0201w"/>
+    <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_psvpgDjOEei5qPF3k0201w" name="+zahtev:string"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_6MyGoDjJEei5qPF3k0201w" name="Sluzbe">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4tw8MDjPEei5qPF3k0201w" name="osiguravajuca kuca" type="_3m7h4DjNEei5qPF3k0201w" association="_4tvuEDjPEei5qPF3k0201w"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_8P_iQDjOEei5qPF3k0201w" name="Obrada"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_-jwUoDjOEei5qPF3k0201w" name="Popust"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_AYoyoDjPEei5qPF3k0201w" name="Ukupna cena"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DXyEUDjPEei5qPF3k0201w" name="Placanje"/>
+    <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_xzPPgDjOEei5qPF3k0201w" name="+prihvati:boolean"/>
+    <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_0JIv4DjOEei5qPF3k0201w" name="+odbij:boolean"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9ui9MDjJEei5qPF3k0201w" name="Sluzbe za osiguranje">
+    <generalization xmi:type="uml:Generalization" xmi:id="_CHQC0DjKEei5qPF3k0201w" general="_6MyGoDjJEei5qPF3k0201w"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_KPCb8DkPEei5qPF3k0201w" name="popust"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_NA8i4DkPEei5qPF3k0201w" name="sracunavanjeCene"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="__MXmEDjJEei5qPF3k0201w" name="Procenitelji">
+    <generalization xmi:type="uml:Generalization" xmi:id="_BgMC0DjKEei5qPF3k0201w" general="_6MyGoDjJEei5qPF3k0201w"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3krOkDkOEei5qPF3k0201w" name="procenaStete"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_8Lb-UDkOEei5qPF3k0201w" name="izracunavanjeCene"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3m7h4DjNEei5qPF3k0201w" name="Osiguravajuca kuca">
+    <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_57SKIDjNEei5qPF3k0201w" name="+Vozila:array"/>
+    <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_8x81QDjNEei5qPF3k0201w" name="+Vlasnici:array"/>
+    <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_-7QEEDjNEei5qPF3k0201w" name="+Zahtevi:array"/>
+    <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_A-GFkDjOEei5qPF3k0201w" name="+racun:int"/>
+    <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_Dj97oDjOEei5qPF3k0201w" name="+postanskiBroj:int"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tjzaoDjOEei5qPF3k0201w" name="Salter">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1koBADjPEei5qPF3k0201w" name="sluzbe" type="_6MyGoDjJEei5qPF3k0201w" association="_1kmy4DjPEei5qPF3k0201w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iDF8cDkOEei5qPF3k0201w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iDQ7kDkOEei5qPF3k0201w" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_5d08oDjOEei5qPF3k0201w" name="Zahtev"/>
+    <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_vGmDEDjOEei5qPF3k0201w" name="+zahtev:string"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_vUopoDjPEei5qPF3k0201w" memberEnd="_vUqe0TjPEei5qPF3k0201w _vUrF4DjPEei5qPF3k0201w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vUp3wDjPEei5qPF3k0201w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vUqe0DjPEei5qPF3k0201w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vUrF4DjPEei5qPF3k0201w" name="vozilo" type="_2HP0oDjJEei5qPF3k0201w" association="_vUopoDjPEei5qPF3k0201w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BDwNkDkOEei5qPF3k0201w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BD27QDkOEei5qPF3k0201w" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wFZYMDjPEei5qPF3k0201w" memberEnd="_wFbNYTjPEei5qPF3k0201w _wFb0cDjPEei5qPF3k0201w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wFamUDjPEei5qPF3k0201w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wFbNYDjPEei5qPF3k0201w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wFb0cDjPEei5qPF3k0201w" name="vlasnik" type="_3X49IDjJEei5qPF3k0201w" association="_wFZYMDjPEei5qPF3k0201w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cn_ngDkOEei5qPF3k0201w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CoIxcDkOEei5qPF3k0201w" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zTBx0DjPEei5qPF3k0201w" memberEnd="_zTC_8TjPEei5qPF3k0201w _zTDnADjPEei5qPF3k0201w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zTCY4DjPEei5qPF3k0201w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zTC_8DjPEei5qPF3k0201w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zTDnADjPEei5qPF3k0201w" name="vozilo" type="_2HP0oDjJEei5qPF3k0201w" association="_zTBx0DjPEei5qPF3k0201w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_014rsDjPEei5qPF3k0201w" memberEnd="_015SwjjPEei5qPF3k0201w _01550DjPEei5qPF3k0201w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_015SwDjPEei5qPF3k0201w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_015SwTjPEei5qPF3k0201w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_01550DjPEei5qPF3k0201w" name="zahtev" type="_5NDH8DjJEei5qPF3k0201w" association="_014rsDjPEei5qPF3k0201w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eOozYDkOEei5qPF3k0201w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eO1AoDkOEei5qPF3k0201w" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1kmy4DjPEei5qPF3k0201w" memberEnd="_1koBADjPEei5qPF3k0201w _1kooEDjPEei5qPF3k0201w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1knZ8DjPEei5qPF3k0201w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1knZ8TjPEei5qPF3k0201w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1kooEDjPEei5qPF3k0201w" name="salter" type="_tjzaoDjOEei5qPF3k0201w" association="_1kmy4DjPEei5qPF3k0201w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4tvuEDjPEei5qPF3k0201w" memberEnd="_4tw8MDjPEei5qPF3k0201w _4tw8MTjPEei5qPF3k0201w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4twVIDjPEei5qPF3k0201w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4twVITjPEei5qPF3k0201w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4tw8MTjPEei5qPF3k0201w" name="sluzbe" type="_6MyGoDjJEei5qPF3k0201w" association="_4tvuEDjPEei5qPF3k0201w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_orfMwDkOEei5qPF3k0201w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ornvoDkOEei5qPF3k0201w" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6CeFUDjPEei5qPF3k0201w" memberEnd="_6CesYjjPEei5qPF3k0201w _6Cf6gDjPEei5qPF3k0201w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6CesYDjPEei5qPF3k0201w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6CesYTjPEei5qPF3k0201w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6Cf6gDjPEei5qPF3k0201w" name="zahtev" type="_5NDH8DjJEei5qPF3k0201w" association="_6CeFUDjPEei5qPF3k0201w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NoqhcDjTEei5qPF3k0201w" memberEnd="_NorvkjjTEei5qPF3k0201w _NosWoDjTEei5qPF3k0201w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NorvkDjTEei5qPF3k0201w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NorvkTjTEei5qPF3k0201w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NosWoDjTEei5qPF3k0201w" name="vlasnik" type="_3X49IDjJEei5qPF3k0201w" association="_NoqhcDjTEei5qPF3k0201w"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ppvDsDjMEei5qPF3k0201w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pqR2QDjMEei5qPF3k0201w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
